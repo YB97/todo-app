@@ -1,0 +1,23 @@
+.tabs {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.tab {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  padding: 12px;
+  flex-grow: 1;
+  border-bottom: 2px solid #eaeaea;
+  transition: color 0.15s linear, border 0.15s linear;
+}
+
+.tab:hover {
+  color: #ff9102;
+  border-color: #ff9102;
+}
+
+.tab--active {
+  border-color: #ff9102;
+}
