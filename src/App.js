@@ -65,13 +65,14 @@ const App = () => {
   return (
     <div className="App">
       <h2>TODO's</h2>
-      <Input
-        className="input-wrapper"
-        placeholder="Add new task..."
-        value={inputValue}
-        onChange={handleInputChange}
-        onKeyPress={handleKeyPress}
-      />
+      <div className="input-wrapper">
+        <Input
+          placeholder="Add new task..."
+          value={inputValue}
+          onChange={handleInputChange}
+          onKeyPress={handleKeyPress}
+        />
+      </div>
       <div className="tabs-wrapper">
         <Tabs tabs={TABS} currentTab={currentTab} onTabChange={setCurrentTab} />
       </div>
